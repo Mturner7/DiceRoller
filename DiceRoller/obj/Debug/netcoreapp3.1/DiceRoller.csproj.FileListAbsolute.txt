@@ -1,0 +1,13 @@
+C:\Users\mturner7\dev\Week3Labs\DiceRoller\DiceRoller\obj\Debug\netcoreapp3.1\DiceRoller.csprojAssemblyReference.cache
+C:\Users\mturner7\dev\Week3Labs\DiceRoller\DiceRoller\obj\Debug\netcoreapp3.1\DiceRoller.AssemblyInfoInputs.cache
+C:\Users\mturner7\dev\Week3Labs\DiceRoller\DiceRoller\obj\Debug\netcoreapp3.1\DiceRoller.AssemblyInfo.cs
+C:\Users\mturner7\dev\Week3Labs\DiceRoller\DiceRoller\obj\Debug\netcoreapp3.1\DiceRoller.csproj.CoreCompileInputs.cache
+C:\Users\mturner7\dev\Week3Labs\DiceRoller\DiceRoller\bin\Debug\netcoreapp3.1\DiceRoller.exe
+C:\Users\mturner7\dev\Week3Labs\DiceRoller\DiceRoller\bin\Debug\netcoreapp3.1\DiceRoller.deps.json
+C:\Users\mturner7\dev\Week3Labs\DiceRoller\DiceRoller\bin\Debug\netcoreapp3.1\DiceRoller.runtimeconfig.json
+C:\Users\mturner7\dev\Week3Labs\DiceRoller\DiceRoller\bin\Debug\netcoreapp3.1\DiceRoller.runtimeconfig.dev.json
+C:\Users\mturner7\dev\Week3Labs\DiceRoller\DiceRoller\bin\Debug\netcoreapp3.1\DiceRoller.dll
+C:\Users\mturner7\dev\Week3Labs\DiceRoller\DiceRoller\bin\Debug\netcoreapp3.1\DiceRoller.pdb
+C:\Users\mturner7\dev\Week3Labs\DiceRoller\DiceRoller\obj\Debug\netcoreapp3.1\DiceRoller.dll
+C:\Users\mturner7\dev\Week3Labs\DiceRoller\DiceRoller\obj\Debug\netcoreapp3.1\DiceRoller.pdb
+C:\Users\mturner7\dev\Week3Labs\DiceRoller\DiceRoller\obj\Debug\netcoreapp3.1\DiceRoller.genruntimeconfig.cache
