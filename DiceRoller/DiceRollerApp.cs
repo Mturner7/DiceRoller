@@ -7,6 +7,19 @@ namespace DiceRoller
     {
         private static Random PRNG = new Random();
 
+        private static bool PromptUser(string msg)
+        {
+            string input = "";
+
+            while (input != "n" && input != "y")
+            {
+                Console.Write($"\n{msg}? (y/n): ");
+                input = Console.ReadLine().ToLower();
+            }
+            if (input == "n") return false;
+            return true;
+        }
+
         public static void RollTheDice(int sides)
         {
             int die1 = RollDie(sides);
@@ -41,19 +54,16 @@ namespace DiceRoller
 
         static void Main(string[] args)
         {
-            int sides;
+            int sides = 0;
             int rolls = 1;
-            string input;
             bool balling = true;
 
-            Console.WriteLine("Ready to take some risks? Let's get to rollin'...\n");
-            Console.Write("How many sides should the dice have? ");
-            input = Console.ReadLine();
+            Console.WriteLine("Ready to take some risks? Let's get to rollin'...\n How many sides should each dice have?");
 
-            while (!Int32.TryParse(input, out sides)) //Confirmation loop
+            while (sides < 1) //Confirmation loop
             {
-                Console.Write("That's not a valid integer! Please enter a valid integer: ");
-                input = Console.ReadLine();
+                Console.Write("That's not a valid number of sides, please try again:");
+                Int32.TryParse(Console.ReadLine(), out sides);
             }
 
             while (balling)
@@ -62,13 +72,7 @@ namespace DiceRoller
                 RollTheDice(sides);
                 rolls++;
 
-                do //Confirmation loop. (So nice, I had to do it twice!)
-                {
-                    Console.Write("\nWould you like to roll again? (y/n): ");
-                    input = Console.ReadLine().ToLower();
-                } while (input != "y" && input != "n");
-
-                if (input == "n") balling = false;
+                balling = PromptUser("Would you like to roll again?");
             }
 
             Console.WriteLine("\nThanks for playing!");
