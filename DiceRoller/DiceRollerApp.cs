@@ -11,7 +11,7 @@ namespace DiceRoller
             int die2 = RollDie(sides);
             int sum = die1 + die2;
 
-            Console.Write($"\nYou rolled a {die1} and a {die2}!!! ({sum} total)\n");
+            Console.Write($"You rolled a {die1} and a {die2}!!! ({sum} total)\n");
             if (sides == 6) CheckCombo(die1, die2, sum);
         }
 
@@ -51,7 +51,7 @@ namespace DiceRoller
 
             while (!Int32.TryParse(input, out sides)) //Confirmation loop
             {
-                Console.Write("That's not a valid integer, try again! ");
+                Console.Write("That's not a valid integer! Please enter a valid integer: ");
                 input = Console.ReadLine();
             }
 
