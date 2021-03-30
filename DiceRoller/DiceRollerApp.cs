@@ -50,7 +50,7 @@ namespace DiceRoller
 
             while (!Int32.TryParse(input, out sides)) //Confirmation loop
             {
-                Console.Write("That's not valid integer big homie, try again! ");
+                Console.Write("That's not a valid integer, try again! ");
                 input = Console.ReadLine();
             }
 
