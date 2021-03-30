@@ -12,7 +12,7 @@ namespace DiceRoller
             int sum = die1 + die2;
 
             Console.Write($"\nYou rolled a {die1} and a {die2}!!! ({sum} total)\n");
-            CheckCombo(die1, die2, sum);
+            if (sides == 6) CheckCombo(die1, die2, sum);
         }
 
         private static int RollDie(int sides)
@@ -41,6 +41,7 @@ namespace DiceRoller
         static void Main(string[] args)
         {
             int sides;
+            int rolls = 1;
             string input;
             bool balling = true;
 
@@ -56,8 +57,9 @@ namespace DiceRoller
 
             while (balling)
             {
-                Console.Clear();
+                Console.WriteLine($"\nRoll {rolls}:");
                 RollTheDice(sides);
+                rolls++;
 
                 do //Confirmation loop. (So nice, I had to do it twice!)
                 {
