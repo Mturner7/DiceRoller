@@ -5,6 +5,8 @@ namespace DiceRoller
 {
     class DiceRollerApp
     {
+        private static Random PRNG = new Random();
+
         public static void RollTheDice(int sides)
         {
             int die1 = RollDie(sides);
@@ -17,8 +19,7 @@ namespace DiceRoller
 
         private static int RollDie(int sides)
         {
-            Random PRNG = new Random();
-            return PRNG.Next(1, sides);
+            return PRNG.Next(1, sides + 1);
         }
 
         private static void CheckCombo(int d1, int d2, int sum)
