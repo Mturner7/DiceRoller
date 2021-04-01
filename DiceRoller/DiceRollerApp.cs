@@ -10,7 +10,6 @@ namespace DiceRoller
         private static bool PromptUser(string msg)
         {
             string input = "";
-
             while (input != "n" && input != "y")
             {
                 Console.Write($"\n{msg}? (y/n): ");
@@ -58,11 +57,13 @@ namespace DiceRoller
             int rolls = 1;
             bool balling = true;
 
-            Console.WriteLine("Ready to take some risks? Let's get to rollin'...\n How many sides should each dice have?");
+            Console.WriteLine("Ready to take some risks? Let's get to rollin'...\n");
+            Console.Write("How many sides should each die have? ");
+            Int32.TryParse(Console.ReadLine(), out sides);
 
             while (sides < 1) //Confirmation loop
             {
-                Console.Write("That's not a valid number of sides, please try again:");
+                Console.Write("That's not a valid number of sides, please try again: ");
                 Int32.TryParse(Console.ReadLine(), out sides);
             }
 
